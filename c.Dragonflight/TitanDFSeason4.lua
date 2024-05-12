@@ -15,7 +15,8 @@ L:CreateSimpleCurrencyPlugin({
 	noCurrencyText = L["DFSeason4"],
 	expName = L["mDragonflight"],
 	category = "CATEGORY_DRAGON",
-	forceMax = true
+	forceMax = true,
+	weeklyIncrease = 120,
 })
 
 -- Drake's Awakened Crests
@@ -25,7 +26,8 @@ L:CreateSimpleCurrencyPlugin({
 	noCurrencyText = L["DFSeason4"],
 	expName = L["mDragonflight"],
 	category = "CATEGORY_DRAGON",
-	forceMax = true
+	forceMax = true,
+	weeklyIncrease = 120,
 })
 
 -- Wyrm's Awakened Crests
@@ -35,7 +37,8 @@ L:CreateSimpleCurrencyPlugin({
 	noCurrencyText = L["DFSeason4"],
 	expName = L["mDragonflight"],
 	category = "CATEGORY_DRAGON",
-	forceMax = true
+	forceMax = true,
+	weeklyIncrease = 120,
 })
 
 -- Aspect's Awakened Crests
@@ -45,7 +48,8 @@ L:CreateSimpleCurrencyPlugin({
 	noCurrencyText = L["DFSeason4"],
 	expName = L["mDragonflight"],
 	category = "CATEGORY_DRAGON",
-	forceMax = true
+	forceMax = true,
+	weeklyIncrease = 120,
 })
 
 -- Renascent Awakening (Catalyst charges)
