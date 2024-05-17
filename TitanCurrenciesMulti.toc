@@ -22,6 +22,8 @@ Core\Utils.lua
 Core\CurrenciesCore.lua
 Core\CurrenciesCorewMax.lua
 Core\Menus.lua
+Core\NoAltCurrencyCore.lua
+Core\NoAltCurrencyPlugin.lua
 Core\SimpleCurrencyPlugin.lua
 Core\SimpleItemPlugin.lua
 c.Dragonflight\TitanBloodyTokens.lua
