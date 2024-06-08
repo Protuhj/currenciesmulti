@@ -18,6 +18,7 @@ end
 function L:CreateSimpleCurrencyPlugin(params)
 	local currencyCount = 0.0
 	local startcurrency
+	local maxThisSession = -1
 
 	local currencyInfoBase = C_CurrencyInfo.GetCurrencyInfo(params.currencyId)
 	local ICON = currencyInfoBase.iconFileID
@@ -66,7 +67,9 @@ function L:CreateSimpleCurrencyPlugin(params)
 		if amount and not startcurrency then
 			startcurrency = currencyCount
 		end
-
+		if currencyCount > maxThisSession then
+			maxThisSession = currencyCount
+		end
 		TitanPanelButton_UpdateButton(self.registry.id)
 	end
 	-----------------------------------------------
@@ -178,8 +181,9 @@ function L:CreateSimpleCurrencyPlugin(params)
 			end
 
 			local sessionValueText = "0" -- Cores da conta de valor
+			local dif = 0
 			if currencyCount and startcurrency then
-				local dif = currencyCount - startcurrency
+				dif = currencyCount - startcurrency
 				local difText = AddSeparator and BreakUpLargeNumbers(dif) or dif
 				if dif == 0 then
 					sessionValueText = TitanUtils_GetHighlightText("0")
@@ -191,7 +195,13 @@ function L:CreateSimpleCurrencyPlugin(params)
 			end
 
 			GameTooltip:AddDoubleLine(L["session"], sessionValueText)
+			if (maxThisSession > 0 and startcurrency > 0) and (maxThisSession - startcurrency > 0) and (dif ~= (maxThisSession - startcurrency)) then
+				sessionEarned = maxThisSession - startcurrency
+				maxSessionText = AddSeparator and BreakUpLargeNumbers(sessionEarned) or sessionEarned
+				GameTooltip:AddDoubleLine("Session earned:", maxSessionText)
+			end
 		end
+
 
 		if TitanGetVar(params.titanId, "ShowAltText") then
 			local charTable = GetCharTable(params.titanId)
