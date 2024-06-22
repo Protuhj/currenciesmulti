@@ -18,7 +18,8 @@ end
 function L:CreateSimpleCurrencyPlugin(params)
 	local currencyCount = 0.0
 	local startcurrency
-	local maxThisSession = -1
+	local totalSessionEarned = 0
+	local lastCurrencyCount
 
 	local currencyInfoBase = C_CurrencyInfo.GetCurrencyInfo(params.currencyId)
 	local ICON = currencyInfoBase.iconFileID
@@ -67,9 +68,10 @@ function L:CreateSimpleCurrencyPlugin(params)
 		if amount and not startcurrency then
 			startcurrency = currencyCount
 		end
-		if currencyCount > maxThisSession then
-			maxThisSession = currencyCount
+		if lastCurrencyCount and (currencyCount > lastCurrencyCount) then
+			totalSessionEarned = totalSessionEarned + (currencyCount - lastCurrencyCount)
 		end
+		lastCurrencyCount = currencyCount
 		TitanPanelButton_UpdateButton(self.registry.id)
 	end
 	-----------------------------------------------
@@ -195,9 +197,8 @@ function L:CreateSimpleCurrencyPlugin(params)
 			end
 
 			GameTooltip:AddDoubleLine(L["session"], sessionValueText)
-			if (maxThisSession > 0 and startcurrency > 0) and (maxThisSession - startcurrency > 0) and (dif ~= (maxThisSession - startcurrency)) then
-				sessionEarned = maxThisSession - startcurrency
-				maxSessionText = AddSeparator and BreakUpLargeNumbers(sessionEarned) or sessionEarned
+			if (totalSessionEarned > 0 and startcurrency > 0) and (dif ~= totalSessionEarned) then
+				maxSessionText = AddSeparator and BreakUpLargeNumbers(totalSessionEarned) or totalSessionEarned
 				GameTooltip:AddDoubleLine("Session earned:", maxSessionText)
 			end
 		end
