@@ -1,4 +1,4 @@
-## Interface: 110000
+## Interface: 110002
 ## Title: Titan Panel [|cff336699Currencies|r] Multi! |cff00aa00@project-version@|r
 ## Notes: Track a lot of currencies! Right-click on Titan Panel, go to "Information" tab and enjoy.
 ## Notes-ptBR: Rastreie várias moedas! Clique com o botão direito no Painel Titan, vá na aba "Informação" e aproveite.
@@ -126,4 +126,12 @@ c.Shadowlands\TitanStygia.lua
 c.Shadowlands\TitanStygianEmber.lua
 c.Shadowlands\TitanTowerKnowledge.lua
 c.Shadowlands\TitanValor.lua
-c.WarWithin\TitanTheWarWithin.lua
+c.WarWithin\TitanArtisansAcuity.lua
+c.WarWithin\TitanMereldarDerbyMark.lua
+c.WarWithin\TitanKej.lua
+c.WarWithin\TitanResonanceCrystals.lua
+c.WarWithin\TitanRestoredCofferKey.lua
+c.WarWithin\TitanSizzlingCinderpollen.lua
+c.WarWithin\TitanValorstones.lua
+c.WarWithin\TitanTWWPrepatch.lua
+c.WarWithin\TitanTWWSeason1.lua
