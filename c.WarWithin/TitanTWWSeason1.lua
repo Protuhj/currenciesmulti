@@ -15,7 +15,8 @@ L:CreateSimpleCurrencyPlugin({
 	noCurrencyText = L["TWWSeason1"],
 	expName = L["mWarWithin"],
 	category = "CATEGORY_TWW",
-	forceMax = true
+	forceMax = true,
+	weeklyIncrease = 90
 })
 
 -- Carved Harbinger Crests
@@ -25,7 +26,8 @@ L:CreateSimpleCurrencyPlugin({
 	noCurrencyText = L["TWWSeason1"],
 	expName = L["mWarWithin"],
 	category = "CATEGORY_TWW",
-	forceMax = true
+	forceMax = true,
+	weeklyIncrease = 90
 })
 
 -- Runed Harbinger Crests
@@ -35,7 +37,8 @@ L:CreateSimpleCurrencyPlugin({
 	noCurrencyText = L["TWWSeason1"],
 	expName = L["mWarWithin"],
 	category = "CATEGORY_TWW",
-	forceMax = true
+	forceMax = true,
+	weeklyIncrease = 90
 })
 
 -- Gilded Harbinger Crests
@@ -45,5 +48,6 @@ L:CreateSimpleCurrencyPlugin({
 	noCurrencyText = L["TWWSeason1"],
 	expName = L["mWarWithin"],
 	category = "CATEGORY_TWW",
-	forceMax = true
+	forceMax = true,
+	weeklyIncrease = 90
 })

@@ -204,7 +204,6 @@ function L:CreateSimpleCurrencyPlugin(params)
 			end
 		end
 
-
 		if TitanGetVar(params.titanId, "ShowAltText") then
 			local charTable = GetCharTable(params.titanId)
 			local total = 0
