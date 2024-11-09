@@ -7,7 +7,10 @@
 
 local _, L = ...;
 if GetLocale() == "ptBR" then
-    ------ The War Within pack
+------ Anniversary pack
+L["No20thCurrency"] = "Pode ser obtida até o dia 7 de\rjaneiro de 2025 no evento de 20\ranos de World of Warcraft."
+
+------ The War Within pack
 L["NoTWWCurrency"] = "Obtida em The War Within."
 L["NoTWWCurrency01"] = "Obtida através do evento de\rpré-patch de The War Within."
 L["TWWSeason1"] = "Obtida na temporada 1 de The War\rWithin."
@@ -28,6 +31,8 @@ L["NoCataCurrency04"] = "Recompensa de missões diárias de\rjoalheria na capita
 L["NoCataCurrency02"] = "Ganhe ao derrotar chefes de\rmasmorras ou raids antigas."
 --- Valor Points
 L["NoCataCurrency03"] = "Ganhe ao derrotar chefes de\rraids recentes ou completando\rmasmorras heróicas."
+--- Fissure Stone Fragment
+L["NoCataCurrency04"] = "Disponível através da masmorra\rheróica Protocolo Inferno."
 
 ------ Shadowlands pack
 --- Adventure Campaign Progress
