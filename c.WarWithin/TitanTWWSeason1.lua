@@ -15,8 +15,7 @@ L:CreateSimpleCurrencyPlugin({
 	noCurrencyText = L["TWWSeason1"],
 	expName = L["mWarWithin"],
 	category = "CATEGORY_TWW",
-	forceMax = true,
-	weeklyIncrease = 90
+	forceMax = true
 })
 
 -- Carved Harbinger Crests
@@ -26,8 +25,7 @@ L:CreateSimpleCurrencyPlugin({
 	noCurrencyText = L["TWWSeason1"],
 	expName = L["mWarWithin"],
 	category = "CATEGORY_TWW",
-	forceMax = true,
-	weeklyIncrease = 90
+	forceMax = true
 })
 
 -- Runed Harbinger Crests
@@ -37,8 +35,7 @@ L:CreateSimpleCurrencyPlugin({
 	noCurrencyText = L["TWWSeason1"],
 	expName = L["mWarWithin"],
 	category = "CATEGORY_TWW",
-	forceMax = true,
-	weeklyIncrease = 90
+	forceMax = true
 })
 
 -- Gilded Harbinger Crests
@@ -48,8 +45,7 @@ L:CreateSimpleCurrencyPlugin({
 	noCurrencyText = L["TWWSeason1"],
 	expName = L["mWarWithin"],
 	category = "CATEGORY_TWW",
-	forceMax = true,
-	weeklyIncrease = 90
+	forceMax = true
 })
 
 -- Harmonized Silk (Catalyst charges, max 8 currently)
@@ -59,8 +55,7 @@ L:CreateSimpleCurrencyPlugin({
 	noCurrencyText = L["TWWSeason1"],
 	expName = L["mWarWithin"],
 	category = "CATEGORY_TWW",
-	forceMax = true,
-	weeklyIncrease = 1
+	forceMax = true
 })
 
 -- Coffer Key Shard

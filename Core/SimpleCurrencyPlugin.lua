@@ -255,6 +255,7 @@ function L:CreateSimpleCurrencyPlugin(params)
 		version = version,
 		getButtonText = GetButtonText,
 		eventsTable = eventsTable,
+		onClick = L.DefaultCurrencyClickHandler,
 		prepareMenu = prepMenu,
 		savedVariables = {
 			ShowIcon = 1,
