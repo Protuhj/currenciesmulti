@@ -99,6 +99,7 @@ c.Misc\TitanHonor.lua
 c.Misc\TitanLovelyCharm.lua
 c.Misc\TitanLoveToken.lua
 c.Misc\TitanMarkofHonor.lua
+c.Misc\TitanMPlusScore.lua
 c.Misc\TitanPolishedPetCharm.lua
 c.Misc\TitanShinyPetCharm.lua
 c.Misc\TitanSpookySupplies.lua

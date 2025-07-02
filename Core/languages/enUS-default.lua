@@ -161,6 +161,9 @@ L["NoBadge"] = "Enter in a dungeon queue\rwhen Timewalking event is\roccurring."
 L["TradersTender"] = "Obtained from your capital's Trading Post."
 --- Diablo Events
 L["GreedyEmissary"] = "Obtained during the Greedy Emissary Diablo Event."
+--- M+ Score
+L["ScoreTitle"] = "M+ Score"
+L["OldScore"] = "(old)"
 
 ------ PvP pack
 --- Mark of Honor
