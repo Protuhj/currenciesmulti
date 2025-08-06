@@ -12,6 +12,7 @@ L["No20thCurrency"] = "Obtainable during the 20th\rAnniversary event Oct 22,\r20
 L["NoTWWCurrency"] = "Obtainable in The War Within."
 L["NoTWWCurrency01"] = "Obtainable through The War Within\rPre-Patch Event."
 L["TWWSeason2"] = "Obtainable in The War Within Season 2."
+L["TWWSeason3"] = "Obtainable in The War Within Season 3."
 L["TWWUndermine"] = "Obtainable in The Undermine."
 L["TWWNFVisions"] = "Obtainable in Horrific Visions in the The War Within 11.1.5 Nightfall patch.\r"
 L["TWWNFEvents"] = "Obtainable via The War Within patch 11.1.5 Nightfall scenario."
@@ -28,7 +29,7 @@ L["CataOnly"] = "Available in Cataclysm."
 --- Chef's Award
 L["NoCataCurrency01"] = "Earned by completing daily\rcooking quests."
 --- Justice Points
-L["NoCataCurrency02"] = "Earned for defeating dungeon \ror older raid bosses."
+L["NoCataCurrency02"] = "Earned for defeating dungeon\ror older raid bosses."
 --- Valor Points
 L["NoCataCurrency03"] = "Earned for defeating recent raid bosses\ror completing heroic Dungeon."
 --- Illustrious Jewelcrafter's Token
@@ -201,6 +202,7 @@ L["mDragonflight"] = "[|cFF198ae0Dragonflight|r]"
 L["mWarWithin"] = "[|cFF198ae0The War Within|r]"
 L["mDelves"] = "[|cFF198ae0Delves|r]"
 L["mWarWithinS2"] = "[|cFF198ae0The War Within (S2)|r]"
+L["mWarWithinS3"] = "[|cFF198ae0The War Within (S3)|r]"
 L["mUndermine"] = "[|cFF198ae0Undermine|r]"
 L["mNightfall"] = "[|cFF198ae0Nightfall|r]"
 L["mHorrificVisions"] = "[|cFF198ae0Horrific Visions|r]"
@@ -234,6 +236,7 @@ L["dragonf"] = "Currency [Dragonflight]"
 L["warwithin"] = "Currency [The War Within]"
 L["wotlk"] = "Currency [WotLK]"
 L["cata"] = "Currency [Cataclysm]"
+L["mop"] = "Currency [Mists of Pandaria]"
 
 --- Character List Plugin strings
 L["charListPluginDisplayName"] = "Data Management"
