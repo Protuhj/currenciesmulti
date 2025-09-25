@@ -169,7 +169,12 @@ local eventsTable = {
 			Update(self)
 			TitanPanelButton_UpdateButton(self.registry.id)
 		end
+		self.ZONE_CHANGED_NEW_AREA = function(self)
+			Update(self)
+			TitanPanelButton_UpdateButton(self.registry.id)
+		end
 		self:RegisterEvent("PLAYER_REGEN_ENABLED")
+		self:RegisterEvent("ZONE_CHANGED_NEW_AREA")
 	end
 }
 -----------------------------------------------

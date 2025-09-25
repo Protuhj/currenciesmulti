@@ -115,3 +115,13 @@ L:CreateNoAltCurrencyPlugin({
 	category = "CATEGORY_TWW",
 	forceMax = true,
 })
+
+-- Shrieking Quartz (bounty delves thing)
+L:CreateSimpleItemPlugin({
+	itemId = 248017,
+	titanId = "TITAN_SHRQTZ",
+	noCurrencyText = L["TWWSeason3"],
+	expName = L["mWarWithinS3"],
+	category = "CATEGORY_TWW",
+	allowAccountTotal = true,
+})
