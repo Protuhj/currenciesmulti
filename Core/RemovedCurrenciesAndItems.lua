@@ -13,6 +13,10 @@ if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
 			return
 		end
 		local removed = {
+			"TITAN_LEMIXBRONZE", -- Legion Remix Bronze
+			"TITAN_LEMIXINFPOWER", -- Legion Remix Infinite Power
+			"TITAN_LEMIXMOTEBT", -- Legion Remix Mote of a Broken Time
+			"TITAN_LEMIXFRAGMEMEC", -- Legion Remix Fragmented Memento of Epoch Challenges
 			"TITAN_TWWS2CATALYST", -- TWW S2 Catalyst Charges
 			"TITAN_HARMONSILK", -- TWW S1 Catalyst Charges
 			"TITAN_WEATHHARBCREST", -- TWW S1 Weathered Harbinger Crests

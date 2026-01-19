@@ -22,6 +22,6 @@ table.insert(TITAN_PANEL_BUTTONS_PLUGIN_CATEGORY, "CATEGORY_MISC")
 table.insert(categories, L["housing"])
 table.insert(TITAN_PANEL_BUTTONS_PLUGIN_CATEGORY, "CATEGORY_HOUSING")
 
-table.insert(categories, L["remix"])
-table.insert(TITAN_PANEL_BUTTONS_PLUGIN_CATEGORY, "CATEGORY_REMIX")
+-- table.insert(categories, L["remix"])
+ --table.insert(TITAN_PANEL_BUTTONS_PLUGIN_CATEGORY, "CATEGORY_REMIX")
 
