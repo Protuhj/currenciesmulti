@@ -211,7 +211,7 @@ L["mUndermine"] = "[|cFF198ae0Undermine|r]"
 L["mNightfall"] = "[|cFF198ae0Nightfall|r]"
 L["mHorrificVisions"] = "[|cFF198ae0Horrific Visions|r]"
 L["mKaresh"] = "[|cFF198ae0K'aresh|r]"
-L["mMoPRemix"] = "[|cFF198ae0MoP Remix|r]"
+L["mLumber"] = "[|cFF198ae0Lumber|r]"
 L["info"] = "|cFFFFFFFF[Information]|r"
 L["totalAcquired"] = "Total acquired: "
 L["warbandTotal"] = "Warband total: "
@@ -243,6 +243,7 @@ L["wotlk"] = "Currency [WotLK]"
 L["cata"] = "Currency [Cataclysm]"
 L["mop"] = "Currency [Mists of Pandaria]"
 L["remix"] = "Currency [Remix]"
+L["housing"] = "Currency [Housing]"
 
 --- Character List Plugin strings
 L["charListPluginDisplayName"] = "Data Management"
@@ -250,3 +251,21 @@ L["purgeDataMenu"] = "Purge character data"
 L["charsChunkMenu"]= "Character Chunk #%d"
 L["purgeDataQuestion"]= "Are you sure you want to purge data for %s?"
 L["charMgmtTooltip"] = "Right-click to selectively purge character data|nother than the current character's."
+
+--- Housing strings
+
+L["IronwoodLumber"] = "Gathered in Classic zones"
+L["OlembaLumber"] = "Gathered in Burning Crusade zones (Outland)"
+L["ColdwindLumber"] = "Gathered in Wrath of the Lich King zones (Northrend)"
+L["AshwoodLumber"] = "Gathered in Cataclysm zones"
+L["BambooLumber"] = "Gathered in Pandaria zones"
+--- Don't localize yet, this string will change when you can gather in Draenor
+L["ShadowmoonLumber"] = "Currently only obtainable by trading 5 Olemba Lumber from Outland|nTrade vendor is in the housing area."
+L["FelTouchedLumber"] = "Gathered in Legion zones (Broken Isles and Argus)"
+L["DarkpineLumber"] = "Gathered in Battle for Azeroth zones (Kul Tiras and Zandalar)"
+L["ArdenLumber"] = "Gathered in Shadowlands zones"
+L["DragonpineLumber"] = "Gathered in Dragonflight zones (Dragon Isles)"
+L["DornicFirLumber"] = "Gathered in The War Within zones (Khaz Algar)"
+L["ThalassianLumber"] = "Gathered in Midnight zones (Harandar)"
+
+

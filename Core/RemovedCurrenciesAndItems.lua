@@ -10,6 +10,7 @@ if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
 	local function clean_db()
 		if not TitanCurrenciesMultiDb then
 			print("TitanCurrenciesMultiDb is nil?")
+			return
 		end
 		local removed = {
 			"TITAN_TWWS2CATALYST", -- TWW S2 Catalyst Charges
