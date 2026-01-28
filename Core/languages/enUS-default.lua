@@ -211,7 +211,6 @@ L["mUndermine"] = "[|cFF198ae0Undermine|r]"
 L["mNightfall"] = "[|cFF198ae0Nightfall|r]"
 L["mHorrificVisions"] = "[|cFF198ae0Horrific Visions|r]"
 L["mKaresh"] = "[|cFF198ae0K'aresh|r]"
-L["mLumber"] = "[|cFF198ae0Lumber|r]"
 L["info"] = "|cFFFFFFFF[Information]|r"
 L["totalAcquired"] = "Total acquired: "
 L["warbandTotal"] = "Warband total: "
@@ -253,7 +252,9 @@ L["purgeDataQuestion"]= "Are you sure you want to purge data for %s?"
 L["charMgmtTooltip"] = "Right-click to selectively purge character data|nother than the current character's."
 
 --- Housing strings
-
+L["Endeavors"] = "[|cFF198ae0Endeavors|r]"
+L["noCurrCommCoupons"] = "Gained via Neighborhood Endeavors"
+L["mLumber"] = "[|cFF198ae0Lumber|r]"
 L["IronwoodLumber"] = "Gathered in Classic zones"
 L["OlembaLumber"] = "Gathered in Burning Crusade zones (Outland)"
 L["ColdwindLumber"] = "Gathered in Wrath of the Lich King zones (Northrend)"
