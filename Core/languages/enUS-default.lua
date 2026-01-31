@@ -211,6 +211,7 @@ L["mUndermine"] = "[|cFF198ae0Undermine|r]"
 L["mNightfall"] = "[|cFF198ae0Nightfall|r]"
 L["mHorrificVisions"] = "[|cFF198ae0Horrific Visions|r]"
 L["mKaresh"] = "[|cFF198ae0K'aresh|r]"
+
 L["info"] = "|cFFFFFFFF[Information]|r"
 L["totalAcquired"] = "Total acquired: "
 L["warbandTotal"] = "Warband total: "
