@@ -87,7 +87,7 @@ local function CreateTooltip(self)
 		Update(self)
 	end
 	GameTooltip:ClearLines()
-	GameTooltip:AddLine(L.Utils.ColorText("FF66b1ea", L["ScoreTitle"]), 1, 1, 1)
+	GameTooltip:AddLine(L.Utils.ColorText("FF66b1ea", "M+ Score"), 1, 1, 1)
 
 	local AddSeparator = TitanGetVar(ID, "AddSeparator")
 	GameTooltip:AddLine(" ")
@@ -135,7 +135,7 @@ local function CreateTooltip(self)
 				local amountText = AddSeparator and BreakUpLargeNumbers(v.score) or v.score
 				amountText = L.Utils.ColorText(getScoreColor(v.score), amountText)
 				if v.season ~= curSeason then
-					amountText = amountText .. " " .. TitanUtils_GetRedText(L["OldScore"])
+					amountText = amountText .. " " .. TitanUtils_GetRedText("(old)")
 				end
 				GameTooltip:AddDoubleLine(arrow .. v.name .. arrowEnd, amountText)
 			end
@@ -162,7 +162,7 @@ local eventsTable = {
 		Update(self)
 		startScore = curScore
 
-		self.registry.menuText = L["mOther"].." Titan" .. L.Utils.ColorText("FF66b1ea", L["ScoreTitle"]) -- Fix for Titan bug that causes colors not to appear in the menu
+		self.registry.menuText = L["mOther"].." Titan" .. L.Utils.ColorText("FF66b1ea", "M+ Score") -- Fix for Titan bug that causes colors not to appear in the menu
 		TitanPanelButton_UpdateButton(self.registry.id)
 
 		self.PLAYER_REGEN_ENABLED = function(self)
@@ -201,7 +201,7 @@ end
 -----------------------------------------------
 L.Elib({
 	id = ID,
-	name = L["mOther"].." Titan" .. L.Utils.ColorText("FF66b1ea", L["ScoreTitle"]),
+	name = L["mOther"].." Titan" .. L.Utils.ColorText("FF66b1ea", "M+ Score"),
 	tooltip = L["ScoreTitle"],
 	icon = "Interface\\Icons\\inv_sword_48",
 	category = "CATEGORY_MISC",
