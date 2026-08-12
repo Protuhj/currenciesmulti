@@ -53,12 +53,12 @@ L:CreateSimpleCurrencyPlugin({
 	category = "CATEGORY_MIDNIGHT"
 })
 
--- Dawnlight Manaflux (Midnight S1 Catalyst charges, max 8)
+-- Venomblight Manaflux (Midnight S2 Catalyst charges, max 8)
 L:CreateSimpleCurrencyPlugin({
-	currencyId = 3378,
+	currencyId = 3465,
 	titanId = "TITAN_MIDNTS1CATALYST",
-	noCurrencyText = L["NoMidnightSeason1"],
-	expName = L["mMidnightS1"],
+	noCurrencyText = L["NoMidnightSeason2"],
+	expName = L["mMidnightS2"],
 	category = "CATEGORY_MIDNIGHT",
 	forceMax = true
 })
@@ -112,6 +112,7 @@ L:CreateSimpleCurrencyPlugin({
 })
 
 -- Nebulous Voidcore
+-- Possibly Venomous Voidcore ID: 3511
 L:CreateSimpleCurrencyPlugin({
 	currencyId = 3418,
 	titanId = "TITAN_MIDNTNEBVCORE",

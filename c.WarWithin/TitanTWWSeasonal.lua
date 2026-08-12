@@ -17,23 +17,3 @@ L:CreateSimpleItemPlugin({
 	expName = L["mWarWithinS3"],
 	category = "CATEGORY_TWW"
 })
-
--- Algari Token of Merit (TWW S3 version)
--- Remove in a month or so, so people can realize they might have some and sell them for 500g
-L:CreateSimpleItemPlugin({
-	itemId = 248242,
-	titanId = "TITAN_ALGTOKENOFMERIT",
-	noCurrencyText = L["TWWSeason3"],
-	expName = L["mWarWithinS3"],
-	category = "CATEGORY_TWW"
-})
-
--- Puzzling Cartel Chip (TWW S3 version)
--- Haven't been removed from what I can tell.
-L:CreateSimpleItemPlugin({
-	itemId = 250741,
-	titanId = "TITAN_PUZZCARTCHIP",
-	noCurrencyText = L["TWWSeason3"],
-	expName = L["mWarWithinS3"],
-	category = "CATEGORY_TWW"
-})

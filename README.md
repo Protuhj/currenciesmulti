@@ -62,7 +62,6 @@
   <li><strong>Resonance Crystals</strong>,</li>
   <li><strong>Restored Coffer Key</strong>,</li>
   <li><strong>Sizzling Cinderpollen</strong>,</li>
-  <li><strong>Valorstones</strong>.</li>
 </ul>
     <b>Season currencies included!</b>
 
