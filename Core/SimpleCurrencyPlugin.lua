@@ -12,6 +12,7 @@ local version = GetAddOnMetadata(ADDON_NAME, "Version")
 
 function L:CreateSimpleCurrencyPlugin(params)
 	local currencyCount = 0.0
+	local weeklyCount = 0
 	local startcurrency
 	-- Use separate variables to track your warband alt amounts so the display can be toggled at will
 	-- If we don't track both, then you would lose session info if you happened to toggle
@@ -27,6 +28,7 @@ function L:CreateSimpleCurrencyPlugin(params)
 	local CURRENCY_NAME = currencyInfoBase.name
 	local isAccountTransferable = currencyInfoBase.isAccountTransferable or false
 	local currencyMaximum = currencyInfoBase.maxQuantity or 0
+	local currencyWeeklyMaximum = currencyInfoBase.maxWeeklyQuantity or 0
 	local useTotalEarnedForMaxQty = currencyInfoBase.useTotalEarnedForMaxQty
 	local totalSeasonalEarned = currencyInfoBase.totalEarned
 	-- For whatever reason, the value can be nil when the plugin first loads
@@ -45,8 +47,10 @@ function L:CreateSimpleCurrencyPlugin(params)
 		local info = C_CurrencyInfo.GetCurrencyInfo(params.currencyId)
 		local amount = info.quantity
 		local totalMax = info.maxQuantity
+		local weeklyAmount = info.quantityEarnedThisWeek
+		local weeklyMax = info.maxWeeklyQuantity
 		if not PLAYER_KEY then
-			return amount, totalMax
+			return amount, totalMax, weeklyAmount, weeklyMax
 		end
 
 		local charTable = L.Utils.GetCharTable(params.titanId)
@@ -60,11 +64,11 @@ function L:CreateSimpleCurrencyPlugin(params)
 		useTotalEarnedForMaxQty = info.useTotalEarnedForMaxQty
 		totalSeasonalEarned = info.totalEarned
 		isAccountTransferable = info.isAccountTransferable or false
-		return amount, totalMax
+		return amount, totalMax, weeklyAmount, weeklyMax
 	end
 
 	local function Update(self)
-		local amount, totalMax = GetAndSaveCurrency()
+		local amount, totalMax, weeklyAmount, weeklyMax = GetAndSaveCurrency()
 		if isAccountTransferable then
 			local accountData = C_CurrencyInfo.FetchCurrencyDataFromAccountCharacters(params.currencyId)
 			if accountData then
@@ -84,6 +88,8 @@ function L:CreateSimpleCurrencyPlugin(params)
 		end
 		currencyCount = amount or 0
 		currencyMaximum = totalMax or 0
+		weeklyCount = weeklyAmount or 0
+		currencyWeeklyMaximum = weeklyMax or 0
 		if amount and not startcurrency then
 			startcurrency = currencyCount
 		end
@@ -182,7 +188,16 @@ function L:CreateSimpleCurrencyPlugin(params)
 				canEarnText = TitanUtils_GetHighlightText("*")
 			end
 			-- Only show the can earn amount for seasonal currencies
-			canEarnText = (useTotalEarnedForMaxQty and (" [" .. canEarnText .. "]")) or ""
+			if useTotalEarnedForMaxQty then
+				canEarnText = " [" .. canEarnText .. "]"
+			elseif currencyWeeklyMaximum > 0 then
+				-- Add info for weekly max
+				canEarnText = " [" .. (currencyWeeklyMaximum - weeklyCount) .. "]"
+				canEarnText  = conditionalColorText(canEarnText, weeklyCount, currencyWeeklyMaximum)
+			else
+				-- Current behavior
+				canEarnText = ""
+			end
 			maxBarText = (AddSeparator and BreakUpLargeNumbers(currencyMaximum) or currencyMaximum)
 			maxBarText = "|r/" .. TitanUtils_GetRedText(maxBarText .. canEarnText)
 		end
