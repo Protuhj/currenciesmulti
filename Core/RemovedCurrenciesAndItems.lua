@@ -13,6 +13,8 @@ if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
 			return
 		end
 		local removed = {
+			"TITAN_PUZZCARTCHIP", -- TWW S3 Puzzling Cartel Chip
+			"TITAN_ALGTOKENOFMERIT", -- TWW S3 Algari Token of Merit
 			"TITAN_TWWS3CATALYST", -- TWW S3 Catalyst charges
 			"TITAN_TWWS2R1CREST", -- TWW S3 Weathered Ethereal Crests
 			"TITAN_TWWS2R2CREST", -- TWW S3 Carved Ethereal Crests
