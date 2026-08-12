@@ -142,9 +142,7 @@ c.WarWithin\TitanOddGlobOfWax.lua
 c.WarWithin\TitanRadiantRemnant.lua
 c.WarWithin\TitanResonanceCrystals.lua
 c.WarWithin\TitanSizzlingCinderpollen.lua
-c.WarWithin\TitanTitanDiscShard.lua
 c.WarWithin\TitanTWWPrepatch.lua
 c.WarWithin\TitanTWWSeasonal.lua
 c.WarWithin\TitanUndermine.lua
 c.WarWithin\TitanUntetheredCoin.lua
-c.WarWithin\TitanValorstones.lua
