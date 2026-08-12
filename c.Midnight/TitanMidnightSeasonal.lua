@@ -73,12 +73,12 @@ L:CreateSimpleCurrencyPlugin({
 	forceMax = true
 })
 
--- Coffer Key Shard (Midnight S1 version)
+-- Coffer Key Shard (Midnight S2 version)
 L:CreateSimpleCurrencyPlugin({
 	currencyId = 3310,
 	titanId = "TITAN_CFFRKYM",
-	noCurrencyText = L["NoMidnightSeason1"],
-	expName = L["mMidnightS1"],
+	noCurrencyText = L["NoMidnightSeason2"],
+	expName = L["mMidnightS2"],
 	category = "CATEGORY_MIDNIGHT"
 })
 
