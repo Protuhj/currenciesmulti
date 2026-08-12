@@ -8,49 +8,59 @@ Data based on information available on Wowhead and in-game.
 
 local _, L = ...;
 
--- Adventurer Dawncrests
+-- Adventurer Mistcrests
 L:CreateSimpleCurrencyPlugin({
-	currencyId = 3383,
+	currencyId = 3442,
 	titanId = "TITAN_MIDNTADVENTURERCREST",
-	noCurrencyText = L["NoMidnightSeason1"],
-	expName = L["mMidnightS1"],
-	category = "CATEGORY_MIDNIGHT"
+	noCurrencyText = L["NoMidnightSeason2"],
+	expName = L["mMidnightS2"],
+	category = "CATEGORY_MIDNIGHT",
+	forceMax = true,
+	weeklyIncrease = 90
 })
 
--- Veteran Dawncrests
+-- Veteran Mistcrests
 L:CreateSimpleCurrencyPlugin({
-	currencyId = 3341,
+	currencyId = 3443,
 	titanId = "TITAN_MIDNTVETERANCREST",
-	noCurrencyText = L["NoMidnightSeason1"],
-	expName = L["mMidnightS1"],
-	category = "CATEGORY_MIDNIGHT"
+	noCurrencyText = L["NoMidnightSeason2"],
+	expName = L["mMidnightS2"],
+	category = "CATEGORY_MIDNIGHT",
+	forceMax = true,
+	weeklyIncrease = 90
 })
 
--- Champion Dawncrests
+-- Champion Mistcrests
 L:CreateSimpleCurrencyPlugin({
-	currencyId = 3343,
+	currencyId = 3444,
 	titanId = "TITAN_MIDNTCHAMPIONCREST",
-	noCurrencyText = L["NoMidnightSeason1"],
-	expName = L["mMidnightS1"],
-	category = "CATEGORY_MIDNIGHT"
+	noCurrencyText = L["NoMidnightSeason2"],
+	expName = L["mMidnightS2"],
+	category = "CATEGORY_MIDNIGHT",
+	forceMax = true,
+	weeklyIncrease = 90
 })
 
--- Hero Dawncrests
+-- Hero Mistcrests
 L:CreateSimpleCurrencyPlugin({
-	currencyId = 3345,
+	currencyId = 3445,
 	titanId = "TITAN_MIDNTHEROCREST",
-	noCurrencyText = L["NoMidnightSeason1"],
-	expName = L["mMidnightS1"],
-	category = "CATEGORY_MIDNIGHT"
+	noCurrencyText = L["NoMidnightSeason2"],
+	expName = L["mMidnightS2"],
+	category = "CATEGORY_MIDNIGHT",
+	forceMax = true,
+	weeklyIncrease = 90
 })
 
--- Myth Dawncrests
+-- Myth Mistcrests
 L:CreateSimpleCurrencyPlugin({
-	currencyId = 3347,
+	currencyId = 3446,
 	titanId = "TITAN_MIDNTMYTHCREST",
-	noCurrencyText = L["NoMidnightSeason1"],
-	expName = L["mMidnightS1"],
-	category = "CATEGORY_MIDNIGHT"
+	noCurrencyText = L["NoMidnightSeason2"],
+	expName = L["mMidnightS2"],
+	category = "CATEGORY_MIDNIGHT",
+	forceMax = true,
+	weeklyIncrease = 90
 })
 
 -- Venomblight Manaflux (Midnight S2 Catalyst charges, max 8)
@@ -82,31 +92,31 @@ L:CreateSimpleCurrencyPlugin({
 -- 	category = "CATEGORY_MIDNIGHT"
 -- })
 
--- Spark of Radiance (Midnight S1 crafting spark)
+-- Spark of Tides (Midnight S2 crafting spark)
 L:CreateSimpleItemPlugin({
-	itemId = 232875,
+	itemId = 274476,
 	titanId = "TITAN_MIDNTS1SPARK",
-	noCurrencyText = L["NoMidnightSeason1"],
-	expName = L["mMidnightS1"],
+	noCurrencyText = L["NoMidnightSeason2"],
+	expName = L["mMidnightS2"],
 	category = "CATEGORY_MIDNIGHT"
 })
 
 -- Thalassian Token of Merit
 L:CreateSimpleItemPlugin({
-	itemId = 258556,
+	itemId = 269862,
 	titanId = "TITAN_MIDNTS1TTOM",
-	noCurrencyText = L["NoMidnightSeason1"],
-	expName = L["mMidnightS1"],
+	noCurrencyText = L["NoMidnightSeason2"],
+	expName = L["mMidnightS2"],
 	category = "CATEGORY_MIDNIGHT"
 })
 
--- Untainted Mana-Crystals (Midnight S1 Delves)
+-- Untainted Mana-Crystals (Midnight S2 Delves)
 -- Reused ID from TWW S3
 L:CreateSimpleCurrencyPlugin({
 	currencyId = 3356,
 	titanId = "TITAN_TWWS3UNTMANACRYS",
-	noCurrencyText = L["NoMidnightSeason1"],
-	expName = L["mMidnightS1"],
+	noCurrencyText = L["NoMidnightSeason2"],
+	expName = L["mMidnightS2"],
 	category = "CATEGORY_MIDNIGHT",
 	forceMax = true
 })
