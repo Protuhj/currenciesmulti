@@ -25,6 +25,7 @@ L["Tailoring"] = "Tailoring"
 L["Decor Duel"] = "Decor Duel"
 L["Eversong Woods"] = "Eversong Woods"
 L["Harandar"] = "Harandar"
+L["The Coiled Isle"] = "The Coiled Isle"
 L["Voidstorm"] = "Voidstorm"
 L["Zul'Aman"] = "Zul'Aman"
 
