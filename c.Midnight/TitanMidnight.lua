@@ -37,6 +37,26 @@ L:CreateSimpleItemPlugin({
 	allowAccountTotal = true
 })
 
+-- Coiled Filament
+-- 12.1 Coiled Isle
+L:CreateSimpleCurrencyPlugin({
+	currencyId = 3546,
+	titanId = "TITAN_MIDNTCOILEDFRAG",
+	noCurrencyText = L["NoMidnightCurrency"],
+	expName = L.Utils.MakeMenuText(L["The Coiled Isle"]),
+	category = "CATEGORY_MIDNIGHT"
+})
+
+-- Corrosive Coin
+-- 12.1 Coiled Isle
+L:CreateSimpleCurrencyPlugin({
+	currencyId = 3448,
+	titanId = "TITAN_MIDNTCORRCOIN",
+	noCurrencyText = L["NoMidnightCurrency"],
+	expName = L.Utils.MakeMenuText(L["The Coiled Isle"]),
+	category = "CATEGORY_MIDNIGHT"
+})
+
 -- Crystalized Resin Fragment
 L:CreateSimpleItemPlugin({
 	itemId = 260531,
