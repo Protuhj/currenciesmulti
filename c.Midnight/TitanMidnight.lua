@@ -57,6 +57,17 @@ L:CreateSimpleCurrencyPlugin({
 	category = "CATEGORY_MIDNIGHT"
 })
 
+-- Corrosive Soul
+-- 12.1 Coiled Isle
+L:CreateSimpleItemPlugin({
+	itemId = 273000,
+	titanId = "TITAN_MIDNTCORRSOUL",
+	noCurrencyText = L["NoMidnightCurrency"],
+	expName = L.Utils.MakeMenuText(L["The Coiled Isle"]),
+	category = "CATEGORY_MIDNIGHT",
+	allowAccountTotal = true
+})
+
 -- Crystalized Resin Fragment
 L:CreateSimpleItemPlugin({
 	itemId = 260531,
