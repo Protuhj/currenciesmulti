@@ -13,6 +13,15 @@ L:CreateSimpleCurrencyPlugin({
 	currencyId = 3363,
 	titanId = "TITAN_HOUSECC",
 	noCurrencyText = L["noCurrCommCoupons"],
-	expName = L["mEndeavors"],
+	expName = L.Utils.MakeMenuText(L["mEndeavors"]),
+	category = "CATEGORY_HOUSING"
+})
+
+-- Griftah's Token of Appreciation
+L:CreateSimpleItemPlugin({
+	itemId = 269994,
+	titanId = "TITAN_HOUSEGTOA",
+	noCurrencyText = L["noCurrCommCoupons"],
+	expName = L.Utils.MakeMenuText(L["mEndeavors"]),
 	category = "CATEGORY_HOUSING"
 })

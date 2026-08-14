@@ -279,7 +279,7 @@ L["purgeDataQuestion"]= "Are you sure you want to purge data for %s?"
 L["charMgmtTooltip"] = "Right-click to selectively purge character data|nother than the current character's."
 
 --- Housing strings
-L["mEndeavors"] = "[|cFF198ae0Endeavors|r]"
+L["mEndeavors"] = "Endeavors"
 L["noCurrCommCoupons"] = "Gained via Neighborhood Endeavors"
 L["mLumber"] = "[|cFF198ae0Lumber|r]"
 L["IronwoodLumber"] = "Gathered in Classic zones"
