@@ -82,16 +82,6 @@ L:CreateSimpleCurrencyPlugin({
 	category = "CATEGORY_MIDNIGHT"
 })
 
--- Radiant Echo (Midnight S1 version)
--- Seems to be unused now
--- L:CreateSimpleItemPlugin({
--- 	itemId = 254275,
--- 	titanId = "TITAN_MIDNTRADECHO",
--- 	noCurrencyText = L["NoMidnightSeason1"],
--- 	expName = L["mMidnightS1"],
--- 	category = "CATEGORY_MIDNIGHT"
--- })
-
 -- Spark of Tides (Midnight S2 crafting spark)
 L:CreateSimpleItemPlugin({
 	itemId = 274476,
@@ -122,12 +112,11 @@ L:CreateSimpleCurrencyPlugin({
 })
 
 -- Nebulous Voidcore
--- Possibly Venomous Voidcore ID: 3511
 L:CreateSimpleCurrencyPlugin({
-	currencyId = 3418,
+	currencyId = 3513,
 	titanId = "TITAN_MIDNTNEBVCORE",
-	noCurrencyText = L["NoMidnightSeason1"],
-	expName = L["mMidnightS1"],
+	noCurrencyText = L["NoMidnightSeason2"],
+	expName = L["mMidnightS2"],
 	category = "CATEGORY_MIDNIGHT",
 	forceMax = true
 })

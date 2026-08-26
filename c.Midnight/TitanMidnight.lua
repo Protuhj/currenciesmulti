@@ -145,6 +145,17 @@ L:CreateSimpleItemPlugin({
 	allowAccountTotal = true
 })
 
+-- Ossified Relic
+-- 12.1 Coiled Isle
+L:CreateSimpleItemPlugin({
+	itemId = 274422,
+	titanId = "TITAN_MIDNTOSSRELIC",
+	noCurrencyText = L["NoMidnightCurrency"],
+	expName = L.Utils.MakeMenuText(L["The Coiled Isle"]),
+	category = "CATEGORY_MIDNIGHT",
+	allowAccountTotal = true
+})
+
 -- Remnant of Anguish
 L:CreateSimpleCurrencyPlugin({
 	currencyId = 3392,
