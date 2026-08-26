@@ -119,7 +119,7 @@ function L:CreateSimpleItemPlugin(params)
 		return currencyCountText .. barBalanceText
 	end
 
-	local function CreateTooltip(self, tooltip)
+	local function CreateTooltip(_, tooltip)
 		local GameTooltip = tooltip or _G.GameTooltip
 		GameTooltip:ClearLines()
 		local link = itemMixin:GetItemLink()

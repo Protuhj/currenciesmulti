@@ -179,7 +179,7 @@ function L:CreateSimpleCurrencyPlugin(params)
 		end
 
 		local maxBarText = ""
-		if currencyMaximum and currencyMaximum > 0 and TitanGetVar(params.titanId, "MaxBar") then
+		if currencyWeeklyMaximum > 0 or currencyMaximum > 0 and TitanGetVar(params.titanId, "MaxBar") then
 			local maxCheckCurrency = (useTotalEarnedForMaxQty and totalSeasonalEarned) or currencyCount
 			local canEarnAmount = currencyMaximum - maxCheckCurrency
 			local canEarnText = (AddSeparator and BreakUpLargeNumbers(canEarnAmount)) or canEarnAmount
@@ -193,12 +193,17 @@ function L:CreateSimpleCurrencyPlugin(params)
 			elseif currencyWeeklyMaximum > 0 then
 				-- Add info for weekly max
 				canEarnText = " [" .. (currencyWeeklyMaximum - weeklyCount) .. "]"
-				canEarnText  = conditionalColorText(canEarnText, weeklyCount, currencyWeeklyMaximum)
+				canEarnText = conditionalColorText(canEarnText, weeklyCount, currencyWeeklyMaximum)
 			else
 				-- Current behavior
 				canEarnText = ""
 			end
-			maxBarText = (AddSeparator and BreakUpLargeNumbers(currencyMaximum) or currencyMaximum)
+			if currencyMaximum > 0 then
+				maxBarText = (AddSeparator and BreakUpLargeNumbers(currencyMaximum) or currencyMaximum)
+			else
+				-- If we get here, then currencyWeeklyMaximum is > 0
+				maxBarText = (AddSeparator and BreakUpLargeNumbers(currencyWeeklyMaximum) or currencyWeeklyMaximum)
+			end
 			maxBarText = "|r/" .. TitanUtils_GetRedText(maxBarText .. canEarnText)
 		end
 
@@ -314,7 +319,7 @@ function L:CreateSimpleCurrencyPlugin(params)
 			maxBarValue = 1
 		end
 	else
-		prepMenu = L.Utils.ifZero(currencyMaximum, prepMenu, L.PrepareCurrenciesMaxMenu)
+		prepMenu = L.Utils.ifZero(currencyMaximum or currencyWeeklyMaximum, prepMenu, L.PrepareCurrenciesMaxMenu)
 		if forceMax then
 			prepMenu = L.PrepareCurrenciesMaxMenu
 			maxBarValue = 1

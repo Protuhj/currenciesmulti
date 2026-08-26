@@ -82,7 +82,8 @@ local function GetButtonText(self, id)
 	return L.Utils.ColorText(getScoreColor(curScore), scoreText) .. barBalanceText
 end
 
-local function CreateTooltip(self)
+local function CreateTooltip(self, tooltip)
+	local GameTooltip = tooltip or _G.GameTooltip
 	if curSeason == -1 then
 		Update(self)
 	end
