@@ -113,7 +113,7 @@ L:CreateSimpleCurrencyPlugin({
 
 -- Nebulous Voidcore
 L:CreateSimpleCurrencyPlugin({
-	currencyId = 3513,
+	currencyId = 3418,
 	titanId = "TITAN_MIDNTNEBVCORE",
 	noCurrencyText = L["NoMidnightSeason2"],
 	expName = L["mMidnightS2"],
