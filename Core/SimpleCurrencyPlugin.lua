@@ -9,6 +9,7 @@ local ADDON_NAME, L = ...;
 L.Elib = LibStub("Elib-4.0").Register
 local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetadata
 local version = GetAddOnMetadata(ADDON_NAME, "Version")
+local Titan_Global = Titan_Global or Titan_G
 
 function L:CreateSimpleCurrencyPlugin(params)
 	local currencyCount = 0.0
@@ -179,7 +180,7 @@ function L:CreateSimpleCurrencyPlugin(params)
 		end
 
 		local maxBarText = ""
-		if currencyWeeklyMaximum > 0 or currencyMaximum > 0 and TitanGetVar(params.titanId, "MaxBar") then
+		if (currencyWeeklyMaximum > 0 or currencyMaximum > 0) and TitanGetVar(params.titanId, "MaxBar") then
 			local maxCheckCurrency = (useTotalEarnedForMaxQty and totalSeasonalEarned) or currencyCount
 			local canEarnAmount = currencyMaximum - maxCheckCurrency
 			local canEarnText = (AddSeparator and BreakUpLargeNumbers(canEarnAmount)) or canEarnAmount
