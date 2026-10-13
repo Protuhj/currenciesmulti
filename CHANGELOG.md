@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [11.13.1] - 2026-10-13
+
+### Fixed
+
+- Updating interface version for 12.1.5
+
 ## [11.13.0] - 2026-10-05
 
 ### Changed
@@ -52,5 +58,7 @@ All notable changes to this project will be documented in this file.
 - Removed the corresponding obsolete localization entries and `.toc` references.
 - Removed obsolete currencies from the README.
 
-[unreleased]: https://github.com/Canettieri/currenciesmulti/compare/v11.12.0...HEAD
+[unreleased]: https://github.com/Canettieri/currenciesmulti/compare/v11.13.1...HEAD
+[11.13.1]: https://github.com/Canettieri/currenciesmulti/releases/tag/v11.13.1
+[11.13.0]: https://github.com/Canettieri/currenciesmulti/releases/tag/v11.13.0
 [11.12.0]: https://github.com/Canettieri/currenciesmulti/releases/tag/v11.12.0
