@@ -79,7 +79,8 @@ L:CreateSimpleCurrencyPlugin({
 	titanId = "TITAN_CFFRKYM",
 	noCurrencyText = L["NoMidnightSeason2"],
 	expName = L["mMidnightS2"],
-	category = "CATEGORY_MIDNIGHT"
+	category = "CATEGORY_MIDNIGHT",
+	forceMax = true
 })
 
 -- Spark of Tides (Midnight S2 crafting spark)
